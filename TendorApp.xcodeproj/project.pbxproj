@@ -1,0 +1,1686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13F595E4249CC9F400CE0DAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13F595E3249CC9F400CE0DAA /* GoogleService-Info.plist */; };
+		38FEB4982318F92F007ACC84 /* CreateTendor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FEB4972318F92F007ACC84 /* CreateTendor.storyboard */; };
+		38FEB49B2318F9BF007ACC84 /* CreateTendorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB49A2318F9BF007ACC84 /* CreateTendorVC.swift */; };
+		38FEB49E2318FD88007ACC84 /* TendorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FEB49D2318FD88007ACC84 /* TendorCell.xib */; };
+		38FEB4A02318FDAF007ACC84 /* TendorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB49F2318FDAF007ACC84 /* TendorCell.swift */; };
+		38FEB4A22319016D007ACC84 /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FEB4A12319016D007ACC84 /* EditProfile.storyboard */; };
+		38FEB4A5231901CB007ACC84 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4A4231901CB007ACC84 /* EditProfileVC.swift */; };
+		38FEB4A82319052D007ACC84 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FEB4A72319052D007ACC84 /* Message.storyboard */; };
+		38FEB4AB2319056C007ACC84 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4AA2319056C007ACC84 /* MessageVC.swift */; };
+		38FEB4AE23190816007ACC84 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4AD23190816007ACC84 /* MessageListCell.swift */; };
+		38FEB4B023190A96007ACC84 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FEB4AF23190A96007ACC84 /* Notification.storyboard */; };
+		38FEB4B323190B68007ACC84 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4B223190B68007ACC84 /* NotificationVC.swift */; };
+		38FEB4B623190D2C007ACC84 /* NotificationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4B523190D2C007ACC84 /* NotificationListCell.swift */; };
+		38FEB4B92319145E007ACC84 /* FeedBack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FEB4B82319145E007ACC84 /* FeedBack.storyboard */; };
+		38FEB4BC23191496007ACC84 /* FeedBackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4BB23191496007ACC84 /* FeedBackVC.swift */; };
+		38FEB4BF23192CEB007ACC84 /* ManagetendorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4BE23192CEB007ACC84 /* ManagetendorVC.swift */; };
+		38FEB4C223193097007ACC84 /* ManageTendorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEB4C123193097007ACC84 /* ManageTendorCell.swift */; };
+		3C3F0558301EFD5E15DE382E /* Pods_TendorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2786ED2A25F3BF4ED327FB85 /* Pods_TendorApp.framework */; };
+		9E1A00A223D787B40056290D /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A00A123D787B40056290D /* SearchResultVC.swift */; };
+		9E1BE7E92428E3E800C0F1A5 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE7E82428E3E800C0F1A5 /* MessageService.swift */; };
+		9E1BE7EB2428E46500C0F1A5 /* MessageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE7EA2428E46500C0F1A5 /* MessageListModel.swift */; };
+		9E1BE7ED2428E53B00C0F1A5 /* MessageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE7EC2428E53B00C0F1A5 /* MessageVM.swift */; };
+		9E1BE7EF2428EA2B00C0F1A5 /* MessageDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE7EE2428EA2B00C0F1A5 /* MessageDetailsModel.swift */; };
+		9E1BE7F124290ADF00C0F1A5 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE7F024290ADF00C0F1A5 /* ChatModel.swift */; };
+		9E1BE7F324291CC400C0F1A5 /* PublishTendorServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE7F224291CC400C0F1A5 /* PublishTendorServices.swift */; };
+		9E1BE7F52429328F00C0F1A5 /* PublishTendorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE7F42429328F00C0F1A5 /* PublishTendorVM.swift */; };
+		9E2DFE90236226C700BED1D9 /* DashboardServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2DFE8F236226C700BED1D9 /* DashboardServices.swift */; };
+		9E2DFE92236227A900BED1D9 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2DFE91236227A900BED1D9 /* DashboardModel.swift */; };
+		9E2DFE94236228B200BED1D9 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2DFE93236228B200BED1D9 /* DashboardVM.swift */; };
+		9E2DFE96236235B200BED1D9 /* TopCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2DFE95236235B200BED1D9 /* TopCategoryService.swift */; };
+		9E2DFE982362363400BED1D9 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2DFE972362363400BED1D9 /* CategoryModel.swift */; };
+		9E2DFE9A236238C700BED1D9 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2DFE99236238C700BED1D9 /* HomeVM.swift */; };
+		9E4894CA23D3ADEA006123CD /* MenuBuyerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4894C823D3ADEA006123CD /* MenuBuyerCell.swift */; };
+		9E4894CB23D3ADEA006123CD /* MenuBuyerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E4894C923D3ADEA006123CD /* MenuBuyerCell.xib */; };
+		9E72BE58242BBF1F004918E4 /* TendorDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E72BE57242BBF1F004918E4 /* TendorDetailsModel.swift */; };
+		9E72BE5A242BDD3D004918E4 /* OfferListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E72BE59242BDD3D004918E4 /* OfferListService.swift */; };
+		9E72BE5C242BDDA0004918E4 /* OfferListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E72BE5B242BDDA0004918E4 /* OfferListModel.swift */; };
+		9E72BE5E242BDE90004918E4 /* OfferListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E72BE5D242BDE90004918E4 /* OfferListVM.swift */; };
+		9E72BE60242BE5DE004918E4 /* ViewOfferDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E72BE5F242BE5DE004918E4 /* ViewOfferDetailsModel.swift */; };
+		9E92C7BA242B441D00F35732 /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E92C7B9242B441D00F35732 /* CountryListModel.swift */; };
+		9E942959242F44FF00F022A6 /* ProductServiceHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E942957242F44FF00F022A6 /* ProductServiceHeaderCell.swift */; };
+		9E975AEF246B1D38000659CA /* Spinner-1s-800pxgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E975AEE246B1D38000659CA /* Spinner-1s-800pxgif.gif */; };
+		9EA3EDDB241E71F300688AA4 /* LatestTendorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDDA241E71F300688AA4 /* LatestTendorModel.swift */; };
+		9EA3EDDD241E7B9C00688AA4 /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDDC241E7B9C00688AA4 /* SearchResultModel.swift */; };
+		9EA3EDDF241E8AB700688AA4 /* ProfileServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDDE241E8AB700688AA4 /* ProfileServices.swift */; };
+		9EA3EDE1241E8B4200688AA4 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDE0241E8B4200688AA4 /* ProfileModel.swift */; };
+		9EA3EDE3241E8D1B00688AA4 /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDE2241E8D1B00688AA4 /* ProfileVM.swift */; };
+		9EA3EDE5241E9DAF00688AA4 /* NotificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDE4241E9DAF00688AA4 /* NotificationServices.swift */; };
+		9EA3EDE7241E9E4D00688AA4 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDE6241E9E4D00688AA4 /* NotificationModel.swift */; };
+		9EA3EDE9241E9F4A00688AA4 /* NotificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDE8241E9F4A00688AA4 /* NotificationVM.swift */; };
+		9EA3EDEB241EB64D00688AA4 /* MyTendorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDEA241EB64D00688AA4 /* MyTendorService.swift */; };
+		9EA3EDED241EB6CB00688AA4 /* MyTendorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDEC241EB6CB00688AA4 /* MyTendorModel.swift */; };
+		9EA3EDEF241EB7FD00688AA4 /* MyTendorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3EDEE241EB7FD00688AA4 /* MyTendorVM.swift */; };
+		9EB16B2F23EB3C0A00234FEF /* MessageDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB16B2E23EB3C0A00234FEF /* MessageDetailsVC.swift */; };
+		9EB16B3223EB3CFC00234FEF /* SenderCellT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB16B3023EB3CFC00234FEF /* SenderCellT.swift */; };
+		9EB16B3323EB3CFC00234FEF /* SenderCellT.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB16B3123EB3CFC00234FEF /* SenderCellT.xib */; };
+		9EB16B3523EB409900234FEF /* ReciverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB16B3423EB409800234FEF /* ReciverCell.xib */; };
+		9EB16B3723EB40B100234FEF /* ReciverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB16B3623EB40B100234FEF /* ReciverCell.swift */; };
+		9ED68F0F23E1E313007F0E59 /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED68F0E23E1E313007F0E59 /* ProfileViewCell.swift */; };
+		9ED68F1223E1EA5D007F0E59 /* ProfileCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED68F1023E1EA5D007F0E59 /* ProfileCommonCell.swift */; };
+		9ED68F1323E1EA5D007F0E59 /* ProfileCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED68F1123E1EA5D007F0E59 /* ProfileCommonCell.xib */; };
+		9ED68F1523E1F067007F0E59 /* EditViewProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED68F1423E1F067007F0E59 /* EditViewProfileVC.swift */; };
+		9ED68F1723E1F273007F0E59 /* EditViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED68F1623E1F273007F0E59 /* EditViewCell.swift */; };
+		9ED68F1923E1FEC2007F0E59 /* PublishTendorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED68F1823E1FEC2007F0E59 /* PublishTendorCell.swift */; };
+		9EDA25C82406EB2900420823 /* CategoryHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA25C62406EB2900420823 /* CategoryHeaderCell.swift */; };
+		9EDA25C92406EB2900420823 /* CategoryHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA25C72406EB2900420823 /* CategoryHeaderCell.xib */; };
+		9EDBC62823FF119D00CD51DF /* OfferDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDBC62723FF119D00CD51DF /* OfferDetailsVC.swift */; };
+		9EDBC62A23FF1A5600CD51DF /* OfferDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDBC62923FF1A5600CD51DF /* OfferDetailsCell.swift */; };
+		9EE476BE2402553D00F0D118 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6B628EC2309386800874D38 /* Roboto-Bold.ttf */; };
+		9EE476BF2402554100F0D118 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6B628EE2309386800874D38 /* Roboto-Medium.ttf */; };
+		9EE476C02402554400F0D118 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6B628ED2309386800874D38 /* Roboto-Regular.ttf */; };
+		9EEE75A0241FEF0A001B2D29 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE759F241FEF0A001B2D29 /* SignUpModel.swift */; };
+		9EEE75A2241FF841001B2D29 /* SignUpServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE75A1241FF841001B2D29 /* SignUpServices.swift */; };
+		9EEE75A4241FF99F001B2D29 /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE75A3241FF99F001B2D29 /* SignUpVM.swift */; };
+		D600CF2F23106DF400638270 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600CF2E23106DF300638270 /* WelcomeVC.swift */; };
+		D60C4FF8231193C900987BB0 /* HomeMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60C4FF7231193C900987BB0 /* HomeMenuVC.swift */; };
+		D60C4FFA2311ADB900987BB0 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60C4FF92311ADB900987BB0 /* Categories.storyboard */; };
+		D60C4FFD2311AE6700987BB0 /* CategoiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60C4FFC2311AE6700987BB0 /* CategoiesVC.swift */; };
+		D60C50002311B28500987BB0 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60C4FFF2311B28500987BB0 /* SearchVC.swift */; };
+		D60C50032311B3C800987BB0 /* SearchtableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60C50022311B3C800987BB0 /* SearchtableCell.xib */; };
+		D60C50052311B41300987BB0 /* SearchtableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60C50042311B41300987BB0 /* SearchtableCell.swift */; };
+		D614EA132358EC0C00213261 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614EA122358EC0C00213261 /* CategoryCell.swift */; };
+		D61612A8230FDA080076C8AD /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61612A7230FDA080076C8AD /* SignInVC.swift */; };
+		D621840E23101F740095BF77 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D621840D23101F740095BF77 /* ForgotPasswordVC.swift */; };
+		D6218411231021E90095BF77 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6218410231021E90095BF77 /* SignUpVC.swift */; };
+		D6218414231023160095BF77 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6218413231023160095BF77 /* ProfileCell.xib */; };
+		D6218416231027E30095BF77 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6218415231027E30095BF77 /* ProfileCell.swift */; };
+		D636BE9E2318174C0061DD2A /* AdvanceSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636BE9D2318174C0061DD2A /* AdvanceSearchVC.swift */; };
+		D636BEA023181BC60061DD2A /* Buyer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D636BE9F23181BC60061DD2A /* Buyer.storyboard */; };
+		D636BEA3231843570061DD2A /* BuyerDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636BEA2231843570061DD2A /* BuyerDashboardVC.swift */; };
+		D636BEA5231843F30061DD2A /* MyHealthMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636BEA4231843F30061DD2A /* MyHealthMenuCell.swift */; };
+		D636BEA8231850750061DD2A /* BuyerMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636BEA7231850750061DD2A /* BuyerMenuVC.swift */; };
+		D636BEAB2318549B0061DD2A /* BuyerMyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636BEAA2318549B0061DD2A /* BuyerMyAccountVC.swift */; };
+		D636BEAE231855060061DD2A /* BuyerMyAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D636BEAD231855060061DD2A /* BuyerMyAccountCell.xib */; };
+		D636BEB0231855560061DD2A /* BuyerMyAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636BEAF231855560061DD2A /* BuyerMyAccountCell.swift */; };
+		D636BEB323185A420061DD2A /* BuyerChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636BEB223185A420061DD2A /* BuyerChangePasswordVC.swift */; };
+		D69AEAAE2319A0BA0069026C /* TendorAdditionalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AEAAD2319A0BA0069026C /* TendorAdditionalInfoVC.swift */; };
+		D69AEAB12319AB090069026C /* ViewOffersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AEAB02319AB090069026C /* ViewOffersVC.swift */; };
+		D69AEAB42319AB7C0069026C /* ViewOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AEAB32319AB7C0069026C /* ViewOfferCell.swift */; };
+		D6ACAF79235A06E200C050BA /* AllCategoiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACAF78235A06E200C050BA /* AllCategoiesVC.swift */; };
+		D6ACAF7C235A093A00C050BA /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACAF7B235A093A00C050BA /* ProductCollectionCell.swift */; };
+		D6B628982309349E00874D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628972309349E00874D38 /* AppDelegate.swift */; };
+		D6B6289A2309349E00874D38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628992309349E00874D38 /* ViewController.swift */; };
+		D6B6289D2309349E00874D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B6289B2309349E00874D38 /* Main.storyboard */; };
+		D6B6289F230934A600874D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B6289E230934A600874D38 /* Assets.xcassets */; };
+		D6B628A2230934A600874D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B628A0230934A600874D38 /* LaunchScreen.storyboard */; };
+		D6B628AD230934A600874D38 /* TendorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628AC230934A600874D38 /* TendorAppTests.swift */; };
+		D6B628B8230934A600874D38 /* TendorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628B7230934A600874D38 /* TendorAppUITests.swift */; };
+		D6B628CF2309372800874D38 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628CE2309372800874D38 /* Enums.swift */; };
+		D6B628D52309375700874D38 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628D02309375700874D38 /* Reachability.swift */; };
+		D6B628D62309375700874D38 /* kTextFiledPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628D12309375700874D38 /* kTextFiledPlaceHolder.swift */; };
+		D6B628D72309375700874D38 /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628D22309375700874D38 /* HelperClass.swift */; };
+		D6B628D82309375700874D38 /* AppPreferenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628D32309375700874D38 /* AppPreferenceService.swift */; };
+		D6B628D92309375700874D38 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628D42309375700874D38 /* iOSDevCenters+GIF.swift */; };
+		D6B628DC2309378900874D38 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628DA2309378900874D38 /* AppConstants.swift */; };
+		D6B628DD2309378900874D38 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628DB2309378900874D38 /* AppStrings.swift */; };
+		D6B628E0230937AD00874D38 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628DE230937AD00874D38 /* APIConstants.swift */; };
+		D6B628E1230937AD00874D38 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628DF230937AD00874D38 /* Response.swift */; };
+		D6B628E4230937C200874D38 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628E2230937C200874D38 /* FoundationExtensions.swift */; };
+		D6B628E5230937C200874D38 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628E3230937C200874D38 /* UIKitExtensions.swift */; };
+		D6B628EB2309385C00874D38 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6B628EA2309385C00874D38 /* loader.gif */; };
+		D6B628F4230938C100874D38 /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628F2230938C100874D38 /* CustomLoaderView.swift */; };
+		D6B628F5230938C100874D38 /* CustomLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B628F3230938C100874D38 /* CustomLoaderView.xib */; };
+		D6B628FE2309393700874D38 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628F92309393600874D38 /* HeaderView.swift */; };
+		D6B628FF2309393700874D38 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B628FA2309393600874D38 /* TabBarView.xib */; };
+		D6B629002309393700874D38 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628FB2309393600874D38 /* TabBarView.swift */; };
+		D6B629012309393700874D38 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B628FC2309393600874D38 /* HeaderView.xib */; };
+		D6B629022309393700874D38 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B628FD2309393700874D38 /* BaseViewController.swift */; };
+		D6B6290523093BC500874D38 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6290423093BC500874D38 /* HomeVC.swift */; };
+		D6B6290923093F1D00874D38 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6290723093F1D00874D38 /* HomeCell.swift */; };
+		D6B6290A23093F1D00874D38 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B6290823093F1D00874D38 /* HomeCell.xib */; };
+		D7E19BB02B813AD35D95EF47 /* Pods_TendorAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21230D8B042FCD6DDF8E5F5 /* Pods_TendorAppTests.framework */; };
+		E86C2587EEB9496EA3CA363E /* Pods_TendorAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF7CE7C9BFC0ACFD5BEF70B /* Pods_TendorAppUITests.framework */; };
+		EF9D84B824688C2E008CE6E5 /* TermsConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9D84B724688C2E008CE6E5 /* TermsConditionVC.swift */; };
+		EFD7674A2355F5D200856BC4 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD767492355F5D200856BC4 /* SignInService.swift */; };
+		EFD7674C2355F61800856BC4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD7674B2355F61800856BC4 /* UserResponse.swift */; };
+		EFD7674E2355F68900856BC4 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD7674D2355F68900856BC4 /* LoginVM.swift */; };
+		EFD767502355F72300856BC4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD7674F2355F72300856BC4 /* UserModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B628A9230934A600874D38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B6288C2309349E00874D38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B628932309349E00874D38;
+			remoteInfo = TendorApp;
+		};
+		D6B628B4230934A600874D38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B6288C2309349E00874D38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B628932309349E00874D38;
+			remoteInfo = TendorApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13F595E2249CC38700CE0DAA /* TendorApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TendorApp.entitlements; sourceTree = "<group>"; };
+		13F595E3249CC9F400CE0DAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2786ED2A25F3BF4ED327FB85 /* Pods_TendorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TendorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CAA033AE88BE746AC11F01 /* Pods-TendorAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendorAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TendorAppUITests/Pods-TendorAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		38FEB4972318F92F007ACC84 /* CreateTendor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateTendor.storyboard; sourceTree = "<group>"; };
+		38FEB49A2318F9BF007ACC84 /* CreateTendorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTendorVC.swift; sourceTree = "<group>"; };
+		38FEB49D2318FD88007ACC84 /* TendorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TendorCell.xib; sourceTree = "<group>"; };
+		38FEB49F2318FDAF007ACC84 /* TendorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendorCell.swift; sourceTree = "<group>"; };
+		38FEB4A12319016D007ACC84 /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
+		38FEB4A4231901CB007ACC84 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		38FEB4A72319052D007ACC84 /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		38FEB4AA2319056C007ACC84 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		38FEB4AD23190816007ACC84 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
+		38FEB4AF23190A96007ACC84 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		38FEB4B223190B68007ACC84 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		38FEB4B523190D2C007ACC84 /* NotificationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListCell.swift; sourceTree = "<group>"; };
+		38FEB4B82319145E007ACC84 /* FeedBack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedBack.storyboard; sourceTree = "<group>"; };
+		38FEB4BB23191496007ACC84 /* FeedBackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackVC.swift; sourceTree = "<group>"; };
+		38FEB4BE23192CEB007ACC84 /* ManagetendorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagetendorVC.swift; sourceTree = "<group>"; };
+		38FEB4C123193097007ACC84 /* ManageTendorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTendorCell.swift; sourceTree = "<group>"; };
+		425902DC30C8192DBAF8C46C /* Pods-TendorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendorApp.debug.xcconfig"; path = "Target Support Files/Pods-TendorApp/Pods-TendorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7EDC4456CF2312DDAB83BDC7 /* Pods-TendorAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendorAppTests.release.xcconfig"; path = "Target Support Files/Pods-TendorAppTests/Pods-TendorAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B840597BA0D63F75E98751E /* Pods-TendorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendorApp.release.xcconfig"; path = "Target Support Files/Pods-TendorApp/Pods-TendorApp.release.xcconfig"; sourceTree = "<group>"; };
+		9E1A00A123D787B40056290D /* SearchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
+		9E1BE7E82428E3E800C0F1A5 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		9E1BE7EA2428E46500C0F1A5 /* MessageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListModel.swift; sourceTree = "<group>"; };
+		9E1BE7EC2428E53B00C0F1A5 /* MessageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVM.swift; sourceTree = "<group>"; };
+		9E1BE7EE2428EA2B00C0F1A5 /* MessageDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailsModel.swift; sourceTree = "<group>"; };
+		9E1BE7F024290ADF00C0F1A5 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		9E1BE7F224291CC400C0F1A5 /* PublishTendorServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishTendorServices.swift; sourceTree = "<group>"; };
+		9E1BE7F42429328F00C0F1A5 /* PublishTendorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishTendorVM.swift; sourceTree = "<group>"; };
+		9E2DFE8F236226C700BED1D9 /* DashboardServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardServices.swift; sourceTree = "<group>"; };
+		9E2DFE91236227A900BED1D9 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		9E2DFE93236228B200BED1D9 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
+		9E2DFE95236235B200BED1D9 /* TopCategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCategoryService.swift; sourceTree = "<group>"; };
+		9E2DFE972362363400BED1D9 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		9E2DFE99236238C700BED1D9 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		9E4894C823D3ADEA006123CD /* MenuBuyerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBuyerCell.swift; sourceTree = "<group>"; };
+		9E4894C923D3ADEA006123CD /* MenuBuyerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBuyerCell.xib; sourceTree = "<group>"; };
+		9E72BE57242BBF1F004918E4 /* TendorDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendorDetailsModel.swift; sourceTree = "<group>"; };
+		9E72BE59242BDD3D004918E4 /* OfferListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferListService.swift; sourceTree = "<group>"; };
+		9E72BE5B242BDDA0004918E4 /* OfferListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferListModel.swift; sourceTree = "<group>"; };
+		9E72BE5D242BDE90004918E4 /* OfferListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferListVM.swift; sourceTree = "<group>"; };
+		9E72BE5F242BE5DE004918E4 /* ViewOfferDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOfferDetailsModel.swift; sourceTree = "<group>"; };
+		9E92C7B9242B441D00F35732 /* CountryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListModel.swift; sourceTree = "<group>"; };
+		9E942957242F44FF00F022A6 /* ProductServiceHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceHeaderCell.swift; sourceTree = "<group>"; };
+		9E975AEE246B1D38000659CA /* Spinner-1s-800pxgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Spinner-1s-800pxgif.gif"; sourceTree = "<group>"; };
+		9EA3EDDA241E71F300688AA4 /* LatestTendorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTendorModel.swift; sourceTree = "<group>"; };
+		9EA3EDDC241E7B9C00688AA4 /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
+		9EA3EDDE241E8AB700688AA4 /* ProfileServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServices.swift; sourceTree = "<group>"; };
+		9EA3EDE0241E8B4200688AA4 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		9EA3EDE2241E8D1B00688AA4 /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
+		9EA3EDE4241E9DAF00688AA4 /* NotificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServices.swift; sourceTree = "<group>"; };
+		9EA3EDE6241E9E4D00688AA4 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		9EA3EDE8241E9F4A00688AA4 /* NotificationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVM.swift; sourceTree = "<group>"; };
+		9EA3EDEA241EB64D00688AA4 /* MyTendorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTendorService.swift; sourceTree = "<group>"; };
+		9EA3EDEC241EB6CB00688AA4 /* MyTendorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTendorModel.swift; sourceTree = "<group>"; };
+		9EA3EDEE241EB7FD00688AA4 /* MyTendorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTendorVM.swift; sourceTree = "<group>"; };
+		9EB16B2E23EB3C0A00234FEF /* MessageDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailsVC.swift; sourceTree = "<group>"; };
+		9EB16B3023EB3CFC00234FEF /* SenderCellT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCellT.swift; sourceTree = "<group>"; };
+		9EB16B3123EB3CFC00234FEF /* SenderCellT.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderCellT.xib; sourceTree = "<group>"; };
+		9EB16B3423EB409800234FEF /* ReciverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReciverCell.xib; sourceTree = "<group>"; };
+		9EB16B3623EB40B100234FEF /* ReciverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciverCell.swift; sourceTree = "<group>"; };
+		9ED68F0E23E1E313007F0E59 /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
+		9ED68F1023E1EA5D007F0E59 /* ProfileCommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCommonCell.swift; sourceTree = "<group>"; };
+		9ED68F1123E1EA5D007F0E59 /* ProfileCommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCommonCell.xib; sourceTree = "<group>"; };
+		9ED68F1423E1F067007F0E59 /* EditViewProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewProfileVC.swift; sourceTree = "<group>"; };
+		9ED68F1623E1F273007F0E59 /* EditViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewCell.swift; sourceTree = "<group>"; };
+		9ED68F1823E1FEC2007F0E59 /* PublishTendorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishTendorCell.swift; sourceTree = "<group>"; };
+		9EDA25C62406EB2900420823 /* CategoryHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderCell.swift; sourceTree = "<group>"; };
+		9EDA25C72406EB2900420823 /* CategoryHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryHeaderCell.xib; sourceTree = "<group>"; };
+		9EDBC62723FF119D00CD51DF /* OfferDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsVC.swift; sourceTree = "<group>"; };
+		9EDBC62923FF1A5600CD51DF /* OfferDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsCell.swift; sourceTree = "<group>"; };
+		9EEE759F241FEF0A001B2D29 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		9EEE75A1241FF841001B2D29 /* SignUpServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpServices.swift; sourceTree = "<group>"; };
+		9EEE75A3241FF99F001B2D29 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
+		A072810A5CBB51CE770B9295 /* Pods-TendorAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendorAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TendorAppUITests/Pods-TendorAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B6B9774DD3EE1A67F005A5EA /* Pods-TendorAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendorAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TendorAppTests/Pods-TendorAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEF7CE7C9BFC0ACFD5BEF70B /* Pods_TendorAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TendorAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D600CF2E23106DF300638270 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		D60C4FF7231193C900987BB0 /* HomeMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuVC.swift; sourceTree = "<group>"; };
+		D60C4FF92311ADB900987BB0 /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
+		D60C4FFC2311AE6700987BB0 /* CategoiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoiesVC.swift; sourceTree = "<group>"; };
+		D60C4FFF2311B28500987BB0 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		D60C50022311B3C800987BB0 /* SearchtableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchtableCell.xib; sourceTree = "<group>"; };
+		D60C50042311B41300987BB0 /* SearchtableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchtableCell.swift; sourceTree = "<group>"; };
+		D614EA122358EC0C00213261 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		D61612A7230FDA080076C8AD /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		D621840D23101F740095BF77 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		D6218410231021E90095BF77 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D6218413231023160095BF77 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		D6218415231027E30095BF77 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		D636BE9D2318174C0061DD2A /* AdvanceSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceSearchVC.swift; sourceTree = "<group>"; };
+		D636BE9F23181BC60061DD2A /* Buyer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buyer.storyboard; sourceTree = "<group>"; };
+		D636BEA2231843570061DD2A /* BuyerDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerDashboardVC.swift; sourceTree = "<group>"; };
+		D636BEA4231843F30061DD2A /* MyHealthMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHealthMenuCell.swift; sourceTree = "<group>"; };
+		D636BEA7231850750061DD2A /* BuyerMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMenuVC.swift; sourceTree = "<group>"; };
+		D636BEAA2318549B0061DD2A /* BuyerMyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMyAccountVC.swift; sourceTree = "<group>"; };
+		D636BEAD231855060061DD2A /* BuyerMyAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerMyAccountCell.xib; sourceTree = "<group>"; };
+		D636BEAF231855560061DD2A /* BuyerMyAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMyAccountCell.swift; sourceTree = "<group>"; };
+		D636BEB223185A420061DD2A /* BuyerChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerChangePasswordVC.swift; sourceTree = "<group>"; };
+		D69AEAAD2319A0BA0069026C /* TendorAdditionalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendorAdditionalInfoVC.swift; sourceTree = "<group>"; };
+		D69AEAB02319AB090069026C /* ViewOffersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffersVC.swift; sourceTree = "<group>"; };
+		D69AEAB32319AB7C0069026C /* ViewOfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOfferCell.swift; sourceTree = "<group>"; };
+		D6ACAF78235A06E200C050BA /* AllCategoiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoiesVC.swift; sourceTree = "<group>"; };
+		D6ACAF7B235A093A00C050BA /* ProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
+		D6B628942309349E00874D38 /* TendorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TendorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B628972309349E00874D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6B628992309349E00874D38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6B6289C2309349E00874D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6B6289E230934A600874D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6B628A1230934A600874D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6B628A3230934A600874D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B628A8230934A600874D38 /* TendorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TendorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B628AC230934A600874D38 /* TendorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendorAppTests.swift; sourceTree = "<group>"; };
+		D6B628AE230934A600874D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B628B3230934A600874D38 /* TendorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TendorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B628B7230934A600874D38 /* TendorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendorAppUITests.swift; sourceTree = "<group>"; };
+		D6B628B9230934A600874D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B628CE2309372800874D38 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		D6B628D02309375700874D38 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		D6B628D12309375700874D38 /* kTextFiledPlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kTextFiledPlaceHolder.swift; sourceTree = "<group>"; };
+		D6B628D22309375700874D38 /* HelperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
+		D6B628D32309375700874D38 /* AppPreferenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferenceService.swift; sourceTree = "<group>"; };
+		D6B628D42309375700874D38 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		D6B628DA2309378900874D38 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		D6B628DB2309378900874D38 /* AppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		D6B628DE230937AD00874D38 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		D6B628DF230937AD00874D38 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		D6B628E2230937C200874D38 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		D6B628E3230937C200874D38 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		D6B628EA2309385C00874D38 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		D6B628EC2309386800874D38 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		D6B628ED2309386800874D38 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		D6B628EE2309386800874D38 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		D6B628F2230938C100874D38 /* CustomLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
+		D6B628F3230938C100874D38 /* CustomLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLoaderView.xib; sourceTree = "<group>"; };
+		D6B628F92309393600874D38 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D6B628FA2309393600874D38 /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		D6B628FB2309393600874D38 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D6B628FC2309393600874D38 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		D6B628FD2309393700874D38 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D6B6290423093BC500874D38 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D6B6290723093F1D00874D38 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		D6B6290823093F1D00874D38 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		EF9D84B724688C2E008CE6E5 /* TermsConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionVC.swift; sourceTree = "<group>"; };
+		EFD767492355F5D200856BC4 /* SignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		EFD7674B2355F61800856BC4 /* UserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		EFD7674D2355F68900856BC4 /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		EFD7674F2355F72300856BC4 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F21230D8B042FCD6DDF8E5F5 /* Pods_TendorAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TendorAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B628912309349E00874D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3F0558301EFD5E15DE382E /* Pods_TendorApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B628A5230934A600874D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E19BB02B813AD35D95EF47 /* Pods_TendorAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B628B0230934A600874D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86C2587EEB9496EA3CA363E /* Pods_TendorAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38FEB4992318F9AE007ACC84 /* CreateTendor */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB49C2318FD70007ACC84 /* TendorCell */,
+				38FEB49A2318F9BF007ACC84 /* CreateTendorVC.swift */,
+				9E1BE7F42429328F00C0F1A5 /* PublishTendorVM.swift */,
+			);
+			path = CreateTendor;
+			sourceTree = "<group>";
+		};
+		38FEB49C2318FD70007ACC84 /* TendorCell */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB49D2318FD88007ACC84 /* TendorCell.xib */,
+				38FEB49F2318FDAF007ACC84 /* TendorCell.swift */,
+				9ED68F1823E1FEC2007F0E59 /* PublishTendorCell.swift */,
+			);
+			path = TendorCell;
+			sourceTree = "<group>";
+		};
+		38FEB4A3231901B8007ACC84 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB4A4231901CB007ACC84 /* EditProfileVC.swift */,
+				9ED68F0E23E1E313007F0E59 /* ProfileViewCell.swift */,
+				9ED68F1023E1EA5D007F0E59 /* ProfileCommonCell.swift */,
+				9ED68F1123E1EA5D007F0E59 /* ProfileCommonCell.xib */,
+				9ED68F1423E1F067007F0E59 /* EditViewProfileVC.swift */,
+				9ED68F1623E1F273007F0E59 /* EditViewCell.swift */,
+				9EA3EDE2241E8D1B00688AA4 /* ProfileVM.swift */,
+				EF9D84B724688C2E008CE6E5 /* TermsConditionVC.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		38FEB4A92319055F007ACC84 /* MessageVC */ = {
+			isa = PBXGroup;
+			children = (
+				9EB16B2D23EB3BA200234FEF /* New Group */,
+				38FEB4AC23190805007ACC84 /* MessageListCell */,
+				38FEB4AA2319056C007ACC84 /* MessageVC.swift */,
+				9E1BE7EC2428E53B00C0F1A5 /* MessageVM.swift */,
+			);
+			path = MessageVC;
+			sourceTree = "<group>";
+		};
+		38FEB4AC23190805007ACC84 /* MessageListCell */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB4AD23190816007ACC84 /* MessageListCell.swift */,
+			);
+			path = MessageListCell;
+			sourceTree = "<group>";
+		};
+		38FEB4B123190B4A007ACC84 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB4B423190D1E007ACC84 /* NotificationListCell */,
+				38FEB4B223190B68007ACC84 /* NotificationVC.swift */,
+				9EA3EDE8241E9F4A00688AA4 /* NotificationVM.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		38FEB4B423190D1E007ACC84 /* NotificationListCell */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB4B523190D2C007ACC84 /* NotificationListCell.swift */,
+			);
+			path = NotificationListCell;
+			sourceTree = "<group>";
+		};
+		38FEB4BA23191486007ACC84 /* FeedBackVC */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB4BB23191496007ACC84 /* FeedBackVC.swift */,
+			);
+			path = FeedBackVC;
+			sourceTree = "<group>";
+		};
+		38FEB4BD23192CDD007ACC84 /* Managetendor */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB4C02319308A007ACC84 /* ManageTendorCell */,
+				38FEB4BE23192CEB007ACC84 /* ManagetendorVC.swift */,
+				9EA3EDEE241EB7FD00688AA4 /* MyTendorVM.swift */,
+			);
+			path = Managetendor;
+			sourceTree = "<group>";
+		};
+		38FEB4C02319308A007ACC84 /* ManageTendorCell */ = {
+			isa = PBXGroup;
+			children = (
+				38FEB4C123193097007ACC84 /* ManageTendorCell.swift */,
+			);
+			path = ManageTendorCell;
+			sourceTree = "<group>";
+		};
+		9E1A00A023D787930056290D /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				9E1A00A123D787B40056290D /* SearchResultVC.swift */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		9EB16B2D23EB3BA200234FEF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9EB16B3423EB409800234FEF /* ReciverCell.xib */,
+				9EB16B2E23EB3C0A00234FEF /* MessageDetailsVC.swift */,
+				9EB16B3023EB3CFC00234FEF /* SenderCellT.swift */,
+				9EB16B3123EB3CFC00234FEF /* SenderCellT.xib */,
+				9EB16B3623EB40B100234FEF /* ReciverCell.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9EDBC62623FF117D00CD51DF /* OfferDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9EDBC62723FF119D00CD51DF /* OfferDetailsVC.swift */,
+				9EDBC62923FF1A5600CD51DF /* OfferDetailsCell.swift */,
+			);
+			path = OfferDetails;
+			sourceTree = "<group>";
+		};
+		C3BC10819EE304C5C1B5A6B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				425902DC30C8192DBAF8C46C /* Pods-TendorApp.debug.xcconfig */,
+				8B840597BA0D63F75E98751E /* Pods-TendorApp.release.xcconfig */,
+				B6B9774DD3EE1A67F005A5EA /* Pods-TendorAppTests.debug.xcconfig */,
+				7EDC4456CF2312DDAB83BDC7 /* Pods-TendorAppTests.release.xcconfig */,
+				27CAA033AE88BE746AC11F01 /* Pods-TendorAppUITests.debug.xcconfig */,
+				A072810A5CBB51CE770B9295 /* Pods-TendorAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D600CF2D23106DD700638270 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				D600CF2E23106DF300638270 /* WelcomeVC.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		D60C4FF6231193AD00987BB0 /* HomeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D60C4FF7231193C900987BB0 /* HomeMenuVC.swift */,
+			);
+			path = HomeMenu;
+			sourceTree = "<group>";
+		};
+		D60C4FFB2311AE4400987BB0 /* Categoies */ = {
+			isa = PBXGroup;
+			children = (
+				D6ACAF77235A06C000C050BA /* AllCategoies */,
+				D60C4FFC2311AE6700987BB0 /* CategoiesVC.swift */,
+			);
+			path = Categoies;
+			sourceTree = "<group>";
+		};
+		D60C4FFE2311B26F00987BB0 /* ArabTili */ = {
+			isa = PBXGroup;
+			children = (
+				D60C50012311B2C500987BB0 /* TableViewCell */,
+				D60C4FFF2311B28500987BB0 /* SearchVC.swift */,
+			);
+			path = ArabTili;
+			sourceTree = "<group>";
+		};
+		D60C50012311B2C500987BB0 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D60C50022311B3C800987BB0 /* SearchtableCell.xib */,
+				D60C50042311B41300987BB0 /* SearchtableCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D61612A6230FD9ED0076C8AD /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				EFD7674D2355F68900856BC4 /* LoginVM.swift */,
+				D61612A7230FDA080076C8AD /* SignInVC.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		D621840C23101F5C0095BF77 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				D621840D23101F740095BF77 /* ForgotPasswordVC.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		D621840F231021CD0095BF77 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D6218412231022EC0095BF77 /* SignUpCell */,
+				D6218410231021E90095BF77 /* SignUpVC.swift */,
+				9EEE75A3241FF99F001B2D29 /* SignUpVM.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		D6218412231022EC0095BF77 /* SignUpCell */ = {
+			isa = PBXGroup;
+			children = (
+				D6218415231027E30095BF77 /* ProfileCell.swift */,
+				D6218413231023160095BF77 /* ProfileCell.xib */,
+			);
+			path = SignUpCell;
+			sourceTree = "<group>";
+		};
+		D636BE9C2318170F0061DD2A /* AdvanceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				D636BE9D2318174C0061DD2A /* AdvanceSearchVC.swift */,
+			);
+			name = AdvanceSearch;
+			path = AdvanceSearch.temp_caseinsensitive_rename.;
+			sourceTree = "<group>";
+		};
+		D636BEA1231843450061DD2A /* BuyerDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D636BEA4231843F30061DD2A /* MyHealthMenuCell.swift */,
+				D636BEA2231843570061DD2A /* BuyerDashboardVC.swift */,
+				9E2DFE93236228B200BED1D9 /* DashboardVM.swift */,
+			);
+			path = BuyerDashboard;
+			sourceTree = "<group>";
+		};
+		D636BEA6231850660061DD2A /* BuyerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D636BEA7231850750061DD2A /* BuyerMenuVC.swift */,
+				9E4894C823D3ADEA006123CD /* MenuBuyerCell.swift */,
+				9E4894C923D3ADEA006123CD /* MenuBuyerCell.xib */,
+			);
+			path = BuyerMenu;
+			sourceTree = "<group>";
+		};
+		D636BEA9231854890061DD2A /* BuyerMyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D636BEAC231854EC0061DD2A /* MyAccountCell */,
+				D636BEAA2318549B0061DD2A /* BuyerMyAccountVC.swift */,
+			);
+			path = BuyerMyAccount;
+			sourceTree = "<group>";
+		};
+		D636BEAC231854EC0061DD2A /* MyAccountCell */ = {
+			isa = PBXGroup;
+			children = (
+				D636BEAD231855060061DD2A /* BuyerMyAccountCell.xib */,
+				D636BEAF231855560061DD2A /* BuyerMyAccountCell.swift */,
+			);
+			path = MyAccountCell;
+			sourceTree = "<group>";
+		};
+		D636BEB123185A2D0061DD2A /* BuyerChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				D636BEB223185A420061DD2A /* BuyerChangePasswordVC.swift */,
+			);
+			path = BuyerChangePassword;
+			sourceTree = "<group>";
+		};
+		D69AEAAC2319A08E0069026C /* TendorAdditionalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D69AEAAD2319A0BA0069026C /* TendorAdditionalInfoVC.swift */,
+			);
+			path = TendorAdditionalInfo;
+			sourceTree = "<group>";
+		};
+		D69AEAAF2319AAE80069026C /* ViewOffers */ = {
+			isa = PBXGroup;
+			children = (
+				9EDBC62623FF117D00CD51DF /* OfferDetails */,
+				D69AEAB22319AB6C0069026C /* ViewOfferCell */,
+				D69AEAB02319AB090069026C /* ViewOffersVC.swift */,
+				9E72BE5D242BDE90004918E4 /* OfferListVM.swift */,
+			);
+			path = ViewOffers;
+			sourceTree = "<group>";
+		};
+		D69AEAB22319AB6C0069026C /* ViewOfferCell */ = {
+			isa = PBXGroup;
+			children = (
+				D69AEAB32319AB7C0069026C /* ViewOfferCell.swift */,
+			);
+			path = ViewOfferCell;
+			sourceTree = "<group>";
+		};
+		D6ACAF77235A06C000C050BA /* AllCategoies */ = {
+			isa = PBXGroup;
+			children = (
+				D6ACAF7A235A092000C050BA /* CollectionCell */,
+				D6ACAF78235A06E200C050BA /* AllCategoiesVC.swift */,
+			);
+			path = AllCategoies;
+			sourceTree = "<group>";
+		};
+		D6ACAF7A235A092000C050BA /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				D6ACAF7B235A093A00C050BA /* ProductCollectionCell.swift */,
+				9EDA25C62406EB2900420823 /* CategoryHeaderCell.swift */,
+				9EDA25C72406EB2900420823 /* CategoryHeaderCell.xib */,
+				9E942957242F44FF00F022A6 /* ProductServiceHeaderCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		D6B6288B2309349E00874D38 = {
+			isa = PBXGroup;
+			children = (
+				D6B628962309349E00874D38 /* TendorApp */,
+				D6B628AB230934A600874D38 /* TendorAppTests */,
+				D6B628B6230934A600874D38 /* TendorAppUITests */,
+				D6B628952309349E00874D38 /* Products */,
+				C3BC10819EE304C5C1B5A6B0 /* Pods */,
+				DD9E1774079F6CCEAC07D3B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B628952309349E00874D38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628942309349E00874D38 /* TendorApp.app */,
+				D6B628A8230934A600874D38 /* TendorAppTests.xctest */,
+				D6B628B3230934A600874D38 /* TendorAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B628962309349E00874D38 /* TendorApp */ = {
+			isa = PBXGroup;
+			children = (
+				13F595E2249CC38700CE0DAA /* TendorApp.entitlements */,
+				D6B628F0230938A000874D38 /* Views */,
+				D6B628EF2309387C00874D38 /* Model */,
+				D6B628E82309383C00874D38 /* Resources */,
+				D6B628C82309367D00874D38 /* Others */,
+				D6B628C72309363100874D38 /* AppDelegate */,
+				D6B628C6230935EC00874D38 /* ImaggeAssets */,
+				D6B628C52309356C00874D38 /* Storyboard+XIBs */,
+				D6B628F6230938D600874D38 /* ViewModel+ViewControllers */,
+				D6B628992309349E00874D38 /* ViewController.swift */,
+				D6B628A3230934A600874D38 /* Info.plist */,
+				13F595E3249CC9F400CE0DAA /* GoogleService-Info.plist */,
+			);
+			path = TendorApp;
+			sourceTree = "<group>";
+		};
+		D6B628AB230934A600874D38 /* TendorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628AC230934A600874D38 /* TendorAppTests.swift */,
+				D6B628AE230934A600874D38 /* Info.plist */,
+			);
+			path = TendorAppTests;
+			sourceTree = "<group>";
+		};
+		D6B628B6230934A600874D38 /* TendorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628B7230934A600874D38 /* TendorAppUITests.swift */,
+				D6B628B9230934A600874D38 /* Info.plist */,
+			);
+			path = TendorAppUITests;
+			sourceTree = "<group>";
+		};
+		D6B628C52309356C00874D38 /* Storyboard+XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628A0230934A600874D38 /* LaunchScreen.storyboard */,
+				D6B6289B2309349E00874D38 /* Main.storyboard */,
+				D60C4FF92311ADB900987BB0 /* Categories.storyboard */,
+				D636BE9F23181BC60061DD2A /* Buyer.storyboard */,
+				38FEB4972318F92F007ACC84 /* CreateTendor.storyboard */,
+				38FEB4A12319016D007ACC84 /* EditProfile.storyboard */,
+				38FEB4A72319052D007ACC84 /* Message.storyboard */,
+				38FEB4AF23190A96007ACC84 /* Notification.storyboard */,
+				38FEB4B82319145E007ACC84 /* FeedBack.storyboard */,
+			);
+			path = "Storyboard+XIBs";
+			sourceTree = "<group>";
+		};
+		D6B628C6230935EC00874D38 /* ImaggeAssets */ = {
+			isa = PBXGroup;
+			children = (
+				D6B6289E230934A600874D38 /* Assets.xcassets */,
+			);
+			path = ImaggeAssets;
+			sourceTree = "<group>";
+		};
+		D6B628C72309363100874D38 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628972309349E00874D38 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D6B628C82309367D00874D38 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628CD2309370B00874D38 /* Enums */,
+				D6B628CC230936F400874D38 /* HelperClasses */,
+				D6B628CB230936CA00874D38 /* AppConstants */,
+				D6B628CA2309369B00874D38 /* ApiClient */,
+				D6B628C92309368800874D38 /* AppExtensions */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D6B628C92309368800874D38 /* AppExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628E2230937C200874D38 /* FoundationExtensions.swift */,
+				D6B628E3230937C200874D38 /* UIKitExtensions.swift */,
+			);
+			path = AppExtensions;
+			sourceTree = "<group>";
+		};
+		D6B628CA2309369B00874D38 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628E6230937DD00874D38 /* APIServices */,
+				D6B628DE230937AD00874D38 /* APIConstants.swift */,
+				D6B628DF230937AD00874D38 /* Response.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		D6B628CB230936CA00874D38 /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628DA2309378900874D38 /* AppConstants.swift */,
+				D6B628DB2309378900874D38 /* AppStrings.swift */,
+			);
+			path = AppConstants;
+			sourceTree = "<group>";
+		};
+		D6B628CC230936F400874D38 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628E72309380200874D38 /* LIp */,
+				D6B628D32309375700874D38 /* AppPreferenceService.swift */,
+				D6B628D22309375700874D38 /* HelperClass.swift */,
+				D6B628D42309375700874D38 /* iOSDevCenters+GIF.swift */,
+				D6B628D12309375700874D38 /* kTextFiledPlaceHolder.swift */,
+				D6B628D02309375700874D38 /* Reachability.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		D6B628CD2309370B00874D38 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628CE2309372800874D38 /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		D6B628E6230937DD00874D38 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				EFD767492355F5D200856BC4 /* SignInService.swift */,
+				9E2DFE8F236226C700BED1D9 /* DashboardServices.swift */,
+				9E2DFE95236235B200BED1D9 /* TopCategoryService.swift */,
+				9EA3EDDE241E8AB700688AA4 /* ProfileServices.swift */,
+				9EA3EDE4241E9DAF00688AA4 /* NotificationServices.swift */,
+				9EA3EDEA241EB64D00688AA4 /* MyTendorService.swift */,
+				9EEE75A1241FF841001B2D29 /* SignUpServices.swift */,
+				9E1BE7E82428E3E800C0F1A5 /* MessageService.swift */,
+				9E1BE7F224291CC400C0F1A5 /* PublishTendorServices.swift */,
+				9E72BE59242BDD3D004918E4 /* OfferListService.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		D6B628E72309380200874D38 /* LIp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LIp;
+			sourceTree = "<group>";
+		};
+		D6B628E82309383C00874D38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E975AEE246B1D38000659CA /* Spinner-1s-800pxgif.gif */,
+				D6B628EA2309385C00874D38 /* loader.gif */,
+				D6B628E92309384400874D38 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D6B628E92309384400874D38 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628EC2309386800874D38 /* Roboto-Bold.ttf */,
+				D6B628EE2309386800874D38 /* Roboto-Medium.ttf */,
+				D6B628ED2309386800874D38 /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		D6B628EF2309387C00874D38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFD7674F2355F72300856BC4 /* UserModel.swift */,
+				EFD7674B2355F61800856BC4 /* UserResponse.swift */,
+				9E2DFE91236227A900BED1D9 /* DashboardModel.swift */,
+				9E2DFE972362363400BED1D9 /* CategoryModel.swift */,
+				9EA3EDDA241E71F300688AA4 /* LatestTendorModel.swift */,
+				9EA3EDDC241E7B9C00688AA4 /* SearchResultModel.swift */,
+				9EA3EDE0241E8B4200688AA4 /* ProfileModel.swift */,
+				9EA3EDE6241E9E4D00688AA4 /* NotificationModel.swift */,
+				9EA3EDEC241EB6CB00688AA4 /* MyTendorModel.swift */,
+				9EEE759F241FEF0A001B2D29 /* SignUpModel.swift */,
+				9E1BE7EA2428E46500C0F1A5 /* MessageListModel.swift */,
+				9E1BE7EE2428EA2B00C0F1A5 /* MessageDetailsModel.swift */,
+				9E1BE7F024290ADF00C0F1A5 /* ChatModel.swift */,
+				9E92C7B9242B441D00F35732 /* CountryListModel.swift */,
+				9E72BE57242BBF1F004918E4 /* TendorDetailsModel.swift */,
+				9E72BE5B242BDDA0004918E4 /* OfferListModel.swift */,
+				9E72BE5F242BE5DE004918E4 /* ViewOfferDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6B628F0230938A000874D38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628F1230938AD00874D38 /* CustomLoaderView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6B628F1230938AD00874D38 /* CustomLoaderView */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628F2230938C100874D38 /* CustomLoaderView.swift */,
+				D6B628F3230938C100874D38 /* CustomLoaderView.xib */,
+			);
+			path = CustomLoaderView;
+			sourceTree = "<group>";
+		};
+		D6B628F6230938D600874D38 /* ViewModel+ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E1A00A023D787930056290D /* SearchResult */,
+				D69AEAAF2319AAE80069026C /* ViewOffers */,
+				D69AEAAC2319A08E0069026C /* TendorAdditionalInfo */,
+				38FEB4BD23192CDD007ACC84 /* Managetendor */,
+				38FEB4BA23191486007ACC84 /* FeedBackVC */,
+				38FEB4B123190B4A007ACC84 /* Notification */,
+				38FEB4A92319055F007ACC84 /* MessageVC */,
+				38FEB4A3231901B8007ACC84 /* EditProfile */,
+				38FEB4992318F9AE007ACC84 /* CreateTendor */,
+				D636BEB123185A2D0061DD2A /* BuyerChangePassword */,
+				D636BEA9231854890061DD2A /* BuyerMyAccount */,
+				D636BEA6231850660061DD2A /* BuyerMenu */,
+				D636BEA1231843450061DD2A /* BuyerDashboard */,
+				D636BE9C2318170F0061DD2A /* AdvanceSearch */,
+				D60C4FFE2311B26F00987BB0 /* ArabTili */,
+				D60C4FFB2311AE4400987BB0 /* Categoies */,
+				D60C4FF6231193AD00987BB0 /* HomeMenu */,
+				D600CF2D23106DD700638270 /* Welcome */,
+				D621840F231021CD0095BF77 /* SignUp */,
+				D621840C23101F5C0095BF77 /* ForgotPassword */,
+				D61612A6230FD9ED0076C8AD /* SignIn */,
+				D6B6290323093BB100874D38 /* Home */,
+				D6B628F72309390F00874D38 /* SideMenu */,
+			);
+			path = "ViewModel+ViewControllers";
+			sourceTree = "<group>";
+		};
+		D6B628F72309390F00874D38 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628F82309391E00874D38 /* MenuView */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		D6B628F82309391E00874D38 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				D6B628FD2309393700874D38 /* BaseViewController.swift */,
+				D6B628F92309393600874D38 /* HeaderView.swift */,
+				D6B628FC2309393600874D38 /* HeaderView.xib */,
+				D6B628FB2309393600874D38 /* TabBarView.swift */,
+				D6B628FA2309393600874D38 /* TabBarView.xib */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		D6B6290323093BB100874D38 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D6B6290623093F0E00874D38 /* HomeCell */,
+				D6B6290423093BC500874D38 /* HomeVC.swift */,
+				9E2DFE99236238C700BED1D9 /* HomeVM.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D6B6290623093F0E00874D38 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				D6B6290723093F1D00874D38 /* HomeCell.swift */,
+				D6B6290823093F1D00874D38 /* HomeCell.xib */,
+				D614EA122358EC0C00213261 /* CategoryCell.swift */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		DD9E1774079F6CCEAC07D3B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2786ED2A25F3BF4ED327FB85 /* Pods_TendorApp.framework */,
+				F21230D8B042FCD6DDF8E5F5 /* Pods_TendorAppTests.framework */,
+				BEF7CE7C9BFC0ACFD5BEF70B /* Pods_TendorAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B628932309349E00874D38 /* TendorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B628BC230934A600874D38 /* Build configuration list for PBXNativeTarget "TendorApp" */;
+			buildPhases = (
+				9344489A5451743261E7064F /* [CP] Check Pods Manifest.lock */,
+				D6B628902309349E00874D38 /* Sources */,
+				D6B628912309349E00874D38 /* Frameworks */,
+				D6B628922309349E00874D38 /* Resources */,
+				1BAF8E77984FC63FB1B533F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TendorApp;
+			productName = TendorApp;
+			productReference = D6B628942309349E00874D38 /* TendorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6B628A7230934A600874D38 /* TendorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B628BF230934A600874D38 /* Build configuration list for PBXNativeTarget "TendorAppTests" */;
+			buildPhases = (
+				98EB6F0E24558152863393FA /* [CP] Check Pods Manifest.lock */,
+				D6B628A4230934A600874D38 /* Sources */,
+				D6B628A5230934A600874D38 /* Frameworks */,
+				D6B628A6230934A600874D38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B628AA230934A600874D38 /* PBXTargetDependency */,
+			);
+			name = TendorAppTests;
+			productName = TendorAppTests;
+			productReference = D6B628A8230934A600874D38 /* TendorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6B628B2230934A600874D38 /* TendorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B628C2230934A600874D38 /* Build configuration list for PBXNativeTarget "TendorAppUITests" */;
+			buildPhases = (
+				8A5B4465B08CD3A72524F551 /* [CP] Check Pods Manifest.lock */,
+				D6B628AF230934A600874D38 /* Sources */,
+				D6B628B0230934A600874D38 /* Frameworks */,
+				D6B628B1230934A600874D38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B628B5230934A600874D38 /* PBXTargetDependency */,
+			);
+			name = TendorAppUITests;
+			productName = TendorAppUITests;
+			productReference = D6B628B3230934A600874D38 /* TendorAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B6288C2309349E00874D38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Asif Dafadar";
+				TargetAttributes = {
+					D6B628932309349E00874D38 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D6B628A7230934A600874D38 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D6B628932309349E00874D38;
+					};
+					D6B628B2230934A600874D38 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D6B628932309349E00874D38;
+					};
+				};
+			};
+			buildConfigurationList = D6B6288F2309349E00874D38 /* Build configuration list for PBXProject "TendorApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6B6288B2309349E00874D38;
+			productRefGroup = D6B628952309349E00874D38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B628932309349E00874D38 /* TendorApp */,
+				D6B628A7230934A600874D38 /* TendorAppTests */,
+				D6B628B2230934A600874D38 /* TendorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B628922309349E00874D38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60C4FFA2311ADB900987BB0 /* Categories.storyboard in Resources */,
+				D6B628FF2309393700874D38 /* TabBarView.xib in Resources */,
+				D6B6290A23093F1D00874D38 /* HomeCell.xib in Resources */,
+				D60C50032311B3C800987BB0 /* SearchtableCell.xib in Resources */,
+				13F595E4249CC9F400CE0DAA /* GoogleService-Info.plist in Resources */,
+				38FEB4A22319016D007ACC84 /* EditProfile.storyboard in Resources */,
+				9EE476BF2402554100F0D118 /* Roboto-Medium.ttf in Resources */,
+				D6B628A2230934A600874D38 /* LaunchScreen.storyboard in Resources */,
+				38FEB4B92319145E007ACC84 /* FeedBack.storyboard in Resources */,
+				38FEB49E2318FD88007ACC84 /* TendorCell.xib in Resources */,
+				D6B628EB2309385C00874D38 /* loader.gif in Resources */,
+				9EE476C02402554400F0D118 /* Roboto-Regular.ttf in Resources */,
+				D636BEA023181BC60061DD2A /* Buyer.storyboard in Resources */,
+				D6218414231023160095BF77 /* ProfileCell.xib in Resources */,
+				D636BEAE231855060061DD2A /* BuyerMyAccountCell.xib in Resources */,
+				38FEB4B023190A96007ACC84 /* Notification.storyboard in Resources */,
+				D6B6289F230934A600874D38 /* Assets.xcassets in Resources */,
+				9EE476BE2402553D00F0D118 /* Roboto-Bold.ttf in Resources */,
+				9E4894CB23D3ADEA006123CD /* MenuBuyerCell.xib in Resources */,
+				9EDA25C92406EB2900420823 /* CategoryHeaderCell.xib in Resources */,
+				38FEB4982318F92F007ACC84 /* CreateTendor.storyboard in Resources */,
+				D6B628F5230938C100874D38 /* CustomLoaderView.xib in Resources */,
+				9EB16B3523EB409900234FEF /* ReciverCell.xib in Resources */,
+				9E975AEF246B1D38000659CA /* Spinner-1s-800pxgif.gif in Resources */,
+				38FEB4A82319052D007ACC84 /* Message.storyboard in Resources */,
+				D6B6289D2309349E00874D38 /* Main.storyboard in Resources */,
+				9EB16B3323EB3CFC00234FEF /* SenderCellT.xib in Resources */,
+				D6B629012309393700874D38 /* HeaderView.xib in Resources */,
+				9ED68F1323E1EA5D007F0E59 /* ProfileCommonCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B628A6230934A600874D38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B628B1230934A600874D38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BAF8E77984FC63FB1B533F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TendorApp/Pods-TendorApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TendorApp/Pods-TendorApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TendorApp/Pods-TendorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5B4465B08CD3A72524F551 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TendorAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9344489A5451743261E7064F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TendorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98EB6F0E24558152863393FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TendorAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B628902309349E00874D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B629002309393700874D38 /* TabBarView.swift in Sources */,
+				9EA3EDED241EB6CB00688AA4 /* MyTendorModel.swift in Sources */,
+				38FEB4BF23192CEB007ACC84 /* ManagetendorVC.swift in Sources */,
+				9E1BE7F124290ADF00C0F1A5 /* ChatModel.swift in Sources */,
+				9E72BE60242BE5DE004918E4 /* ViewOfferDetailsModel.swift in Sources */,
+				D6B628D72309375700874D38 /* HelperClass.swift in Sources */,
+				9EA3EDDF241E8AB700688AA4 /* ProfileServices.swift in Sources */,
+				38FEB4AE23190816007ACC84 /* MessageListCell.swift in Sources */,
+				9EEE75A4241FF99F001B2D29 /* SignUpVM.swift in Sources */,
+				D636BEA5231843F30061DD2A /* MyHealthMenuCell.swift in Sources */,
+				D636BEA8231850750061DD2A /* BuyerMenuVC.swift in Sources */,
+				9EA3EDEF241EB7FD00688AA4 /* MyTendorVM.swift in Sources */,
+				EF9D84B824688C2E008CE6E5 /* TermsConditionVC.swift in Sources */,
+				D69AEAB12319AB090069026C /* ViewOffersVC.swift in Sources */,
+				38FEB4B623190D2C007ACC84 /* NotificationListCell.swift in Sources */,
+				D6B628F4230938C100874D38 /* CustomLoaderView.swift in Sources */,
+				9EA3EDE9241E9F4A00688AA4 /* NotificationVM.swift in Sources */,
+				38FEB49B2318F9BF007ACC84 /* CreateTendorVC.swift in Sources */,
+				D6B628E4230937C200874D38 /* FoundationExtensions.swift in Sources */,
+				D636BEA3231843570061DD2A /* BuyerDashboardVC.swift in Sources */,
+				9ED68F1523E1F067007F0E59 /* EditViewProfileVC.swift in Sources */,
+				D636BEB323185A420061DD2A /* BuyerChangePasswordVC.swift in Sources */,
+				D60C4FF8231193C900987BB0 /* HomeMenuVC.swift in Sources */,
+				9E2DFE94236228B200BED1D9 /* DashboardVM.swift in Sources */,
+				9E92C7BA242B441D00F35732 /* CountryListModel.swift in Sources */,
+				D6B628E0230937AD00874D38 /* APIConstants.swift in Sources */,
+				9EEE75A0241FEF0A001B2D29 /* SignUpModel.swift in Sources */,
+				9EA3EDEB241EB64D00688AA4 /* MyTendorService.swift in Sources */,
+				EFD7674A2355F5D200856BC4 /* SignInService.swift in Sources */,
+				D6ACAF79235A06E200C050BA /* AllCategoiesVC.swift in Sources */,
+				9EDBC62823FF119D00CD51DF /* OfferDetailsVC.swift in Sources */,
+				D69AEAB42319AB7C0069026C /* ViewOfferCell.swift in Sources */,
+				D6B629022309393700874D38 /* BaseViewController.swift in Sources */,
+				38FEB4B323190B68007ACC84 /* NotificationVC.swift in Sources */,
+				9E1BE7EF2428EA2B00C0F1A5 /* MessageDetailsModel.swift in Sources */,
+				9E2DFE92236227A900BED1D9 /* DashboardModel.swift in Sources */,
+				9EA3EDDD241E7B9C00688AA4 /* SearchResultModel.swift in Sources */,
+				9EA3EDDB241E71F300688AA4 /* LatestTendorModel.swift in Sources */,
+				9E1BE7EB2428E46500C0F1A5 /* MessageListModel.swift in Sources */,
+				D600CF2F23106DF400638270 /* WelcomeVC.swift in Sources */,
+				9EA3EDE7241E9E4D00688AA4 /* NotificationModel.swift in Sources */,
+				D6B628DC2309378900874D38 /* AppConstants.swift in Sources */,
+				D636BE9E2318174C0061DD2A /* AdvanceSearchVC.swift in Sources */,
+				9EA3EDE3241E8D1B00688AA4 /* ProfileVM.swift in Sources */,
+				9E2DFE9A236238C700BED1D9 /* HomeVM.swift in Sources */,
+				D6B628D92309375700874D38 /* iOSDevCenters+GIF.swift in Sources */,
+				9EB16B3723EB40B100234FEF /* ReciverCell.swift in Sources */,
+				9E72BE5E242BDE90004918E4 /* OfferListVM.swift in Sources */,
+				9ED68F1923E1FEC2007F0E59 /* PublishTendorCell.swift in Sources */,
+				9E942959242F44FF00F022A6 /* ProductServiceHeaderCell.swift in Sources */,
+				9E2DFE982362363400BED1D9 /* CategoryModel.swift in Sources */,
+				9E1BE7F324291CC400C0F1A5 /* PublishTendorServices.swift in Sources */,
+				D614EA132358EC0C00213261 /* CategoryCell.swift in Sources */,
+				9E1A00A223D787B40056290D /* SearchResultVC.swift in Sources */,
+				9EB16B3223EB3CFC00234FEF /* SenderCellT.swift in Sources */,
+				38FEB4AB2319056C007ACC84 /* MessageVC.swift in Sources */,
+				D69AEAAE2319A0BA0069026C /* TendorAdditionalInfoVC.swift in Sources */,
+				9E2DFE90236226C700BED1D9 /* DashboardServices.swift in Sources */,
+				9EA3EDE5241E9DAF00688AA4 /* NotificationServices.swift in Sources */,
+				9E1BE7F52429328F00C0F1A5 /* PublishTendorVM.swift in Sources */,
+				D6B628E1230937AD00874D38 /* Response.swift in Sources */,
+				D6B6290923093F1D00874D38 /* HomeCell.swift in Sources */,
+				9E4894CA23D3ADEA006123CD /* MenuBuyerCell.swift in Sources */,
+				D636BEAB2318549B0061DD2A /* BuyerMyAccountVC.swift in Sources */,
+				D636BEB0231855560061DD2A /* BuyerMyAccountCell.swift in Sources */,
+				9EA3EDE1241E8B4200688AA4 /* ProfileModel.swift in Sources */,
+				D6B6289A2309349E00874D38 /* ViewController.swift in Sources */,
+				9E1BE7ED2428E53B00C0F1A5 /* MessageVM.swift in Sources */,
+				9E72BE58242BBF1F004918E4 /* TendorDetailsModel.swift in Sources */,
+				9ED68F0F23E1E313007F0E59 /* ProfileViewCell.swift in Sources */,
+				D61612A8230FDA080076C8AD /* SignInVC.swift in Sources */,
+				D6B628D62309375700874D38 /* kTextFiledPlaceHolder.swift in Sources */,
+				D6218411231021E90095BF77 /* SignUpVC.swift in Sources */,
+				9E72BE5A242BDD3D004918E4 /* OfferListService.swift in Sources */,
+				9E72BE5C242BDDA0004918E4 /* OfferListModel.swift in Sources */,
+				9EB16B2F23EB3C0A00234FEF /* MessageDetailsVC.swift in Sources */,
+				D60C50002311B28500987BB0 /* SearchVC.swift in Sources */,
+				38FEB4A5231901CB007ACC84 /* EditProfileVC.swift in Sources */,
+				9ED68F1723E1F273007F0E59 /* EditViewCell.swift in Sources */,
+				D6B628CF2309372800874D38 /* Enums.swift in Sources */,
+				9EEE75A2241FF841001B2D29 /* SignUpServices.swift in Sources */,
+				D621840E23101F740095BF77 /* ForgotPasswordVC.swift in Sources */,
+				38FEB4A02318FDAF007ACC84 /* TendorCell.swift in Sources */,
+				D6B628D52309375700874D38 /* Reachability.swift in Sources */,
+				D6B628D82309375700874D38 /* AppPreferenceService.swift in Sources */,
+				9E2DFE96236235B200BED1D9 /* TopCategoryService.swift in Sources */,
+				EFD7674E2355F68900856BC4 /* LoginVM.swift in Sources */,
+				38FEB4C223193097007ACC84 /* ManageTendorCell.swift in Sources */,
+				EFD7674C2355F61800856BC4 /* UserResponse.swift in Sources */,
+				9EDBC62A23FF1A5600CD51DF /* OfferDetailsCell.swift in Sources */,
+				D60C4FFD2311AE6700987BB0 /* CategoiesVC.swift in Sources */,
+				D6B628DD2309378900874D38 /* AppStrings.swift in Sources */,
+				9ED68F1223E1EA5D007F0E59 /* ProfileCommonCell.swift in Sources */,
+				D6B628E5230937C200874D38 /* UIKitExtensions.swift in Sources */,
+				D60C50052311B41300987BB0 /* SearchtableCell.swift in Sources */,
+				D6B628982309349E00874D38 /* AppDelegate.swift in Sources */,
+				D6218416231027E30095BF77 /* ProfileCell.swift in Sources */,
+				D6ACAF7C235A093A00C050BA /* ProductCollectionCell.swift in Sources */,
+				38FEB4BC23191496007ACC84 /* FeedBackVC.swift in Sources */,
+				9E1BE7E92428E3E800C0F1A5 /* MessageService.swift in Sources */,
+				D6B6290523093BC500874D38 /* HomeVC.swift in Sources */,
+				9EDA25C82406EB2900420823 /* CategoryHeaderCell.swift in Sources */,
+				D6B628FE2309393700874D38 /* HeaderView.swift in Sources */,
+				EFD767502355F72300856BC4 /* UserModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B628A4230934A600874D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B628AD230934A600874D38 /* TendorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B628AF230934A600874D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B628B8230934A600874D38 /* TendorAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B628AA230934A600874D38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B628932309349E00874D38 /* TendorApp */;
+			targetProxy = D6B628A9230934A600874D38 /* PBXContainerItemProxy */;
+		};
+		D6B628B5230934A600874D38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B628932309349E00874D38 /* TendorApp */;
+			targetProxy = D6B628B4230934A600874D38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B6289B2309349E00874D38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B6289C2309349E00874D38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6B628A0230934A600874D38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B628A1230934A600874D38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B628BA230934A600874D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tendor MChJ (24QAXADG59)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6B628BB230934A600874D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tendor MChJ (24QAXADG59)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6B628BD230934A600874D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425902DC30C8192DBAF8C46C /* Pods-TendorApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TendorApp/TendorApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.7;
+				DEVELOPMENT_TEAM = 24QAXADG59;
+				INFOPLIST_FILE = TendorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TendorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TendorAdhok;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D6B628BE230934A600874D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B840597BA0D63F75E98751E /* Pods-TendorApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TendorApp/TendorApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.7;
+				DEVELOPMENT_TEAM = 24QAXADG59;
+				INFOPLIST_FILE = TendorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TendorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TendorAdhok;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D6B628C0230934A600874D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B9774DD3EE1A67F005A5EA /* Pods-TendorAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZQW32Y3QG;
+				INFOPLIST_FILE = TendorAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asifWorld.TendorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TendorApp.app/TendorApp";
+			};
+			name = Debug;
+		};
+		D6B628C1230934A600874D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDC4456CF2312DDAB83BDC7 /* Pods-TendorAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZQW32Y3QG;
+				INFOPLIST_FILE = TendorAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asifWorld.TendorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TendorApp.app/TendorApp";
+			};
+			name = Release;
+		};
+		D6B628C3230934A600874D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27CAA033AE88BE746AC11F01 /* Pods-TendorAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZQW32Y3QG;
+				INFOPLIST_FILE = TendorAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asifWorld.TendorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TendorApp;
+			};
+			name = Debug;
+		};
+		D6B628C4230934A600874D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A072810A5CBB51CE770B9295 /* Pods-TendorAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZQW32Y3QG;
+				INFOPLIST_FILE = TendorAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asifWorld.TendorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TendorApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B6288F2309349E00874D38 /* Build configuration list for PBXProject "TendorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B628BA230934A600874D38 /* Debug */,
+				D6B628BB230934A600874D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B628BC230934A600874D38 /* Build configuration list for PBXNativeTarget "TendorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B628BD230934A600874D38 /* Debug */,
+				D6B628BE230934A600874D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B628BF230934A600874D38 /* Build configuration list for PBXNativeTarget "TendorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B628C0230934A600874D38 /* Debug */,
+				D6B628C1230934A600874D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B628C2230934A600874D38 /* Build configuration list for PBXNativeTarget "TendorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B628C3230934A600874D38 /* Debug */,
+				D6B628C4230934A600874D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6B6288C2309349E00874D38 /* Project object */;
+}

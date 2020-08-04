@@ -1,0 +1,6 @@
+framework module Pods_TendorAppUITests {
+  umbrella header "Pods-TendorAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
